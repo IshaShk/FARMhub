@@ -1,7 +1,5 @@
 # FARMHUB: Connecting Farmers, Producers, and Consumers
 
-![FARMHUB Logo](link-to-your-logo.png)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
