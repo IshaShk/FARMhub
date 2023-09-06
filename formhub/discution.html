@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for chat interface */
+        body {
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .chat-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .chat-messages {
+            padding: 20px;
+        }
+        .message {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .message .message-text {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 80%;
+            position: relative;
+        }
+        .message .message-text::after {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent transparent transparent #f9f9f9;
+            right: 0;
+            top: 0;
+        }
+        .user-message .message-text {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .chat-input {
+            display: flex;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+        }
+        .chat-input input[type="text"] {
+            flex: 1;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .chat-input button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 chat-container">
+        <div class="chat-header">Customer Support</div>
+        <div class="chat-messages">
+            <div class="message user-message">
+                <div class="message-text">
+                    Hello, how can I help you?
+                </div>
+            </div>
+            <div class="message">
+                <div class="message-text">
+                    Hi, I have a question about your products.
+                </div>
+            </div>
+            <div class="message user-message">
+                <div class="message-text">
+                    Sure, I'm here to assist you. What would you like to know?
+                </div>
+            </div>
+            <!-- Add more chat messages here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
